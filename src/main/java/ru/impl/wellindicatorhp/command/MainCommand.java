@@ -9,5 +9,6 @@ public class MainCommand {
         manager.registerSubCommand(new OnArg(plugin));
         manager.registerSubCommand(new OffArg(plugin));
         plugin.getCommand("hpindicator").setExecutor(manager);
+        plugin.getCommand("hpindicator").setTabCompleter(new Tab());
     }
 }
